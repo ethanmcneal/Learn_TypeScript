@@ -35,3 +35,16 @@ let array1 :number[] = [1,2,3]
 let array2 :Array<string> = ['1','2','3']
 
 let person1 :[string, number] = ['chris', 22] //must be in same order as the type array
+
+
+enum Color {Red, Green, Blue};
+
+let c :Color = Color.Green
+
+console.log(c); // => 1
+
+
+let randomValue :any = 10
+
+randomValue = true;
+randomValue = 'string';
