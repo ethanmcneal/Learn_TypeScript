@@ -93,4 +93,7 @@ let b = 20;
 
 let multiType: number | boolean;
 multiType = 20;
-multiType = true
+multiType = true // no errors
+
+// useful when you need to restrict to certain types, instead of any
+//also has intelesense support, multiType. will infer methods for nums or booleans 
