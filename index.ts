@@ -54,3 +54,28 @@ let myVar :any = 10; //can cause errors
 console.log(myVar.name) //no error because type any
 myVar(); //no error because type any
 myVar.toUpperCase() //no error because type any
+
+
+let myVar2 :unknown = 10; //can cause errors
+
+// console.log(myVar2 + 10) //error because type unknown
+// myVar2(); //error because type unknown
+// myVar2.toUpperCase() //error
+
+console.log(myVar2 as number + 10); // no error because as number
+// myVar2(); //still an error because type unknown
+(myVar2 as string).toUpperCase() //no error because as string
+
+// OR you can define a function to add a type
+
+let myVar3 :unknown = 10
+
+function hasName(obj :any): obj is {name: string} {
+    return !!obj &&
+        typeof obj === 'object' &&
+        "name" in obj
+}
+
+if (hasName(myVar3)) {
+    console.log(myVar3.name) // no error
+}
