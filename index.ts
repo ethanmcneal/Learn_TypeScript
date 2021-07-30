@@ -79,3 +79,7 @@ function hasName(obj :any): obj is {name: string} {
 if (hasName(myVar3)) {
     console.log(myVar3.name) // no error
 }
+
+let a;
+a = 10;
+a = true;
