@@ -1,5 +1,5 @@
 
-let message = "Welcome Back";
+// let message = "Welcome Back";
 
 console.log(message);
 
@@ -17,8 +17,21 @@ let isBeginner :boolean = false;
 
 let total :number = 0
 
-let name :string = 'Ethan'
+let username :string = 'Ethan'
 
-let sentence :string = `My name is ${name} I am a beginner in Typescript`
+let sentence :string = `My name is ${username} I am a beginner in Typescript`
 
 console.log(sentence)
+
+let n :null = null;
+let u :undefined = undefined;
+
+let isNew :boolean = null;
+
+let myName :string = undefined
+
+let array1 :number[] = [1,2,3]
+
+let array2 :Array<string> = ['1','2','3']
+
+let person1 :[string, number] = ['chris', 22] //must be in same order as the type array
