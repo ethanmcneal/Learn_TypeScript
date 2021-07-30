@@ -82,4 +82,15 @@ if (hasName(myVar3)) {
 
 let a;
 a = 10;
-a = true;
+a = true; //no type error
+
+let b = 20;
+
+// b = true //type error inferred b is a number, because initial value
+
+//b. will infer number methods
+
+
+let multiType: number | boolean;
+multiType = 20;
+multiType = true
