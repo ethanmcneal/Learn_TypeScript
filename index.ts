@@ -48,3 +48,9 @@ let randomValue :any = 10
 
 randomValue = true;
 randomValue = 'string';
+
+let myVar :any = 10; //can cause errors
+
+console.log(myVar.name) //no error because type any
+myVar(); //no error because type any
+myVar.toUpperCase() //no error because type any
